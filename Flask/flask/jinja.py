@@ -44,5 +44,18 @@ def success(score):
     return render_template('result.html', results=res)
    # return "The marks you got is "+ str(score)
 
+## Variable Rule
+@app.route("/successres/<int:score>")
+def successres(score):
+    res = ""
+    if score>=50:
+        res = "PASSED"
+    else:
+        res = "FAILED"
+        
+    exp={'score':score, "res":res}
+        
+    return render_template('result1.html', results=exp)
+
 if __name__ == "___main__":
     app.run(debug=True)
