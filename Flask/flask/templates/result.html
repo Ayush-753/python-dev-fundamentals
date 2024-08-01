@@ -2,4 +2,10 @@
 
     Based on the marks the result you got is {{results}}
 
+    {% if results>=50 %}
+    <h2>You have Passed with {{ results }}</h2>
+    {% else %}
+    <h2>You have Failed with {{ results }}</h2>
+    {% endif %}
+
 </h1>
