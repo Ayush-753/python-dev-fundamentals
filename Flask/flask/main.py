@@ -5,7 +5,7 @@ app=Flask(__name__) # It creates instance of flask class, which will be your WSG
 
 @app.route("/")
 def welcome():
-    return "Welcome to Flask demo"
+    return "<html><H1>Welcome to Flask demo</H1><html>"
 
 @app.route("/index")
 def index():
