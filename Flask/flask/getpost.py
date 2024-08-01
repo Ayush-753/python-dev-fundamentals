@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 
-###WSGI Application
-app=Flask(__name__) # It creates instance of flask class, which will be your WSGI (Web Server Gateway Interface) application.
+app=Flask(__name__)
 
 @app.route("/")
 def welcome():
@@ -29,5 +28,5 @@ def suuuubmit():
         return f'Hello {name}!'
     return render_template('form.html')
 
-if __name__ == "___main__":     # entry point of the application
+if __name__ == "___main__":
     app.run(debug=True)
