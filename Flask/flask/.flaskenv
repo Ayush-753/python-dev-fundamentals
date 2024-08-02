@@ -1,1 +1,1 @@
-FLASK_APP=jinja.py
+FLASK_APP=api.py
